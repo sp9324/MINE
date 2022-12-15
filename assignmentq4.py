@@ -1,0 +1,5 @@
+x=int(25)
+y=str(25)
+z=float(25)
+sum=int(x)+int(y)+int(z)
+print("sum is: ", sum)

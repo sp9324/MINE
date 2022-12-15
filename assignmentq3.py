@@ -1,0 +1,5 @@
+seconds=int(input("enter number of seconds: "))
+mins=int(seconds/60)
+seconds_left=seconds-mins*60
+print("mins: ", mins)
+print("seconds: ", seconds_left)
