@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Online Course Website</title>
+	<link rel="stylesheet" type="text/css" href="course.css">
+</head>
+<body>
+	<header>
+		<h1>Courses</h1>
+		<nav>
+			<ul>
+				<li><a href="../Hackathon/index.html">Home</a></li>
+				<li><a href="#">Chats</a></li>
+				<li><a href="#">Messages</a></li>
+				<li><a href="#">Notifications</a></li>
+				<li><a href="../webinar/webinar.html">Webinars</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Courses</h2>
+			<ul>
+				<li><button id="topic1btn"><a href="topic1-course.html">Topic 1</a></button></li>
+				<li><button id="topic2btn"><a href="topic2-course.html">Topic 2</a></button></li>
+				<li><button id="topic3btn"><a href="topic3-course.html">Topic 3</a></button></li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Course Completion Certificate</h2>
+			<form id="myForm">
+				<label for="name" id="name-label">Name:</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="course" id="course-label">Course:</label>
+				<select id="course" name="course">
+					<option value="TOPIC 1">TOPIC 1</option>
+					<option value="TOPIC 2">TOPIC 2</option>
+					<option value="TOPIC 3">TOPIC 3</option>
+				</select><br><br>
+				<button type="submit" id="submit-btn">Submit</button>
+			</form>
+		</section>
+	</main>
+
+	<script src="course.js"></script>
+
+	<footer>
+		<p>&copy; 2023 My Online Course Website</p>
+	</footer>
+
+
+</body>
+</html>

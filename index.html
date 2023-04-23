@@ -1,96 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="homepage.css">
-    <!-- fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <!-- This is just a basic code,
-        You are allowed to -
-        1. change any image .
-        2. add extra content if you want 
-        etc. except changing the basic content of the page , you can add,replace or shift any content.
-        But, your are not allowed to increase the number of pages.
-    
-    -->
+    <title>OpinionPortal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <center>
-        <h1 id="heading">Binge watch</h1>
-        <div class="introContainer">
-            <p id="intro">INTRODUCTION------------------</p>
-        </div>
-    </center>
-
-    <div class="containerImages">
-        <div>
-            <a href="Horror\horror.html" target="_blank">
-                <img width="280px" height="250px" class="card-img-top" id="horrorimg"
-                    src="https://img.freepik.com/premium-photo/3d-illustration-halloween-concept-background-castle-graveyard-horror-background_685067-358.jpg?w=2000"
-                    alt="">
-            </a>
-            <div class="subContainer">
-                <p class="subtitle">Horror</p>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="Images\images\logo.png"></a>
+            <div class="search-box">
+                <img src="images\images\search.png">
+                <input type="text" placeholder="Search">
             </div>
         </div>
-
-        <div>
-            <a href="Romantic-comedy/romcom1.html" target="_blank">
-                <img width="260px" height="250px" class="card-img-top" id="romcomimg"
-                    src="romcoming.jpg"
-                    alt="">
-            </a>
-            <div class="subContainer">
-                <p class="subtitle">Romantic-Comedy</p>
+        <div class="navbar-center">
+            <ul>
+                
+                <li><a href="#" class="activelink"><img src="Images\images\home.png"></a><span>Home</span></li>
+                <li><a href="../course/course.html"><img src="Images\images\certi.png" height="30" width="30"></a><a href="../course/course.html"><span>Courses</span></a></li>
+                <li><a href="#"><img src="Images\images\jobs.png"></a><span>Jobs</span></li>
+                <li><a href="chats.html"><img src="Images\images\message.png"></a><span>Chat</span></li>
+                <li><a href="notifs.html"><img src="Images\images\notification.png"></a><span>Notifications</span></li>
+                <li><a href="../webinar/webinar.html"><img src="Images\images\webinar.png"></a><a href="../webinar/webinar.html"><span>Webinars</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+            <img src="Images\images\user-1.png" class="nav-profile-img">
             </div>
         </div>
-
-        <div>
-            <a href="Thrilling-Mysteries/design.html" target="_blank">
-                <img width="265px" height="250px" class="card-img-top" id="mysteryimg"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN3BwZUKUNBKKDbIeSwvZr5aFHNetxLhLMHdpG5qqlnZ24xtGk2C9YLpWXXZHaZT-D9M&usqp=CAU"
-                    alt="">
-            </a>
-            <div class="subContainer">
-                <p class="subtitle">Mystery</p>
+        <!-- profile dropdown menu -->
+         <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <!-- <img src="Images/images/user-1.png"> -->
+                    <div>
+                        <h3>User ABC</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <!--<a href="#" class="profile-menu-link">
+                    <img src="Images/images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Images/images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Images/images/help.png">
+                    <p>Help and Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="Images/images/display.png">
+                    <p>Display and Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="/images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
             </div>
-        </div>
-
-        <div>
-            <a href="Animation/animated.html" target="_blank">
-                <img width="260px" height="250px" class="card-img-top" id="animatedimg"
-                    src="https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/5G6WCFYU7NACZBZ3AHZ7ICQQFU.jpg"
-                    alt="">
-            </a>
-            <div class="subContainer">
-                <p class="subtitle">Anime</p>
+        </div> -->
+    </nav>
+<div class= "container">
+    <!-- left side bar -->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="Images\images\cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="Images\images\user-1.png">
+                <h1>User ABC</h1>
+                <h3>Web Developer at Microsoft</h3>
+                <ul>
+                    <li>Your Profile Views<span>52</span></li>
+                    <li>Your Post Views<span>820</span></li>
+                    <li>Your Network<span>500</span></li>
+                </ul>
             </div>
-        </div>
-
-        <div>
-            <a href="Action/action_movies.html" target="_blank">
-                <img width="250px" height="250px" class="card-img-top" id="actionimg"
-                    src="https://cdn.thecoolist.com/wp-content/uploads/2016/08/Blackhawk-Down-best-action-movie-960x540.jpg"
-                    alt="">
-            </a>
-            <div class="subContainer">
-                <p class="subtitle">Action</p>
+            <div class="sidebar-profile-link">
+                <a href="profile.html"><img src="Images\images\items.png">My Items</a>
+               
+            </div>
+            <div class="sidebar-activity">
+                <h3>Recent</h3>
+                <a href="#"><img src="Images/images/recent.png">Web Development</a>
+                <a href="#"><img src="Images/images/recent.png">User Interface</a>
+                <a href="#"><img src="Images/images/recent.png">Online Learning</a>
+                <a href="#"><img src="Images/images/recent.png">Learn Online</a>
+                <a href="#"><img src="Images/images/recent.png">Code Better</a>
+                <a href="#"><img src="Images/images/recent.png">Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="Images/images/group.png">Web Design Group</a>
+                <a href="#"><img src="Images/images/group.png">College Alumini Group</a>
+                <a href="#"><img src="Images/images/group.png">Quizzzing</a>
+                <a href="#"><img src="Images/images/group.png">Public Speaking</a>
+                <a href="#"><img src="Images/images/group.png">Student Politics</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src= "Images/images/hashtag.png">webdevelopment</a>
+                <a href="#"><img src= "Images/images/hashtag.png">verve</a>
+                <a href="#"><img src= "Images/images/hashtag.png">studentelections</a>
+                <!-- <a href="#"><img src= "Images/images/hashtag.png">pecfest2023</a>
+                <a href="#"><img src= "Images/images/hashtag.png">PPT</a> -->
+                <div class="discover-more-link">
+                    <a href="see.html" > Explore more</a>
+                </div>
             </div>
         </div>
     </div>
-
-    <footer class="footer">
-        <a class="links" target="_blank" href="About.html">About you</a>
-        <a class="links" target="_blank" href="https://www.facebook.com/petrichor.iitpkd">Link to facebook page of petrichor</a>
-        <a class="links" target="_blank" href="https://instagram.com/petrichor.iitpkd?igshid=MDM4ZDc5MmU=">Link to instagram page of
-            petrichor</a>
-    </footer>
+    <!-- main content -->
+    <div class="main-content">
+        <div class="create-post">
+            <div class="create-post-image">
+                <img src="Images/images/user-1.png">
+                <textarea rows="2" placeholder="Share your views"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="Images/images/photo.png">Photo</li>
+                <li><img src="Images/images/video.png">Video</li>
+                <li><img src="Images/images/event.png">Events</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="Images/images/down-arrow.png"></span></p>
+         </div>
+         
+         <dic class="post">
+             <div class="post-author">
+                 <img src="Images/images/user-3.png">
+                 <div>
+                     <h1>Benjamin Leo</h1>
+                     <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                     <small>2 hours ago</small>
+                 </div>
+             </div>
+             <p>The success of every website depends on search engine optimisation and digital marketing strategy. If you are on first page of all major search engines then you are ahead among your competitors.</p>
+             <img src="Images/images/post-image-1.png" width="100%">
+ 
+             <div class="post-stats">
+                 <div>
+                     <img src="Images/images/thumbsup.png">
+                     <img src="Images/images/love.png">
+                     <img src="Images/images/clap.png">
+                     <span class= "liked-users">Abhinav Mishra and 75 others</span>
+                 </div>
+                 <div>
+                     <span>22 comments &middot; 40 shares</span>
+                 </div>
+             </div>
+             <div class="post-activity">
+                 <div>
+                     <img src="Images/images/user-1.png" class="post-activity-user-icon">
+                     <img src="Images/images/down-arrow.png" class="post-activity-arrow-icon">
+                 </div>
+                 <div>
+                     <img src="Images/images/like.png">
+                     <span>Like</span>
+                 </div>
+                 <div>
+                     <img src="Images/images/comment.png">
+                     <span>Comment</span>
+                 </div>
+                 <div>
+                     <img src="Images/images/share.png">
+                     <span>Share</span>
+                 </div>
+                 <div>
+                     <img src="Images/images/send.png">
+                     <span>Send</span>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <!-- right side bar -->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="Images/images/more.png" class="info-icon">
+            <h3>Past Webinars</h3>
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10,934 viewers</span>
+ 
+            <a href="#">Careers growing horizontally too</a>
+            <span>19h ago &middot; 1,552 viewers</span>
+ 
+            <a href="#">Less work visa for US, more for UK</a>
+            <span>1d ago &middot; 27,290 viewers</span>
+ 
+            <a href="#">More hiring = higher confidence</a>
+            <span>18h ago &middot; 8,208 viewers</span>
+ 
+            <a href="#">Gautam Adani is the world's third richest</a>
+            <span>12h ago &middot; 4,205 viewers</span>
+ 
+            <a href="see.html" class="read-more-link">See More</a>
+         </div>
+ 
+         <div class="sidebar-ad">
+             <small>Ad &middot; &middot;</small>
+             <p>Master the 5 principles of web design</p>
+             <div>
+                 <img src="Images/images/user-1.png">
+                 <img src="Images/images/mi-logo.png">
+             </div>
+             <b>Brand and Demand in Xiaomi</b>
+             <a href="#" class="ad-link">Learn More</a>
+         </div>
+ 
+         <div class="sidebar-useful-links">
+             <a href="#">About</a>
+             <a href="#">Accessibility</a>
+             <a href="#">Privacy Policy</a>
+             <a href="#">Advertising</a>
+             <a href="see.html">More</a>
+             
+             
+         </div>    
+     </div>
+    </div>
+</div>
+<script>
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMooreLink");
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activty");
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML = "Show less<b> - </b>"
+        }
+        else{
+            moreLink.innerHTML = "Show less<b> + </b>"
+        }
+    }
+</script>
 </body>
-<script href="homepage.js"></script>
 </html>
